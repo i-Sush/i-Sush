@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sushant Sutar · i-Sush</title>
+<meta name="description" content="Portfolio of Sushant Sutar: Python, machine learning and data mining.">
+<style>
+:root{--bg:#000;--card:#1c1c1e;--bd:#2c2c2e;--tx:#f5f5f7;--sub:#a1a1a6;--ac:#0a84ff;--gl:#fff}
+@media (prefers-color-scheme:light){:root{--bg:#fbfbfd;--card:#f5f5f7;--bd:#d9d9de;--tx:#1d1d1f;--sub:#6e6e73;--ac:#0071e3;--gl:#0071e3}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Inter,Roboto,Arial,sans-serif}
+main{max-width:960px;margin:0 auto;padding:clamp(28px,7vw,88px) 20px 64px}
+h1{font-size:clamp(2.5rem,9vw,4.75rem);letter-spacing:-.035em;line-height:1.05;margin:0}
+h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 18px}
+p{margin:0}.sub{color:var(--sub);font-size:clamp(1.05rem,2.8vw,1.4rem);margin-top:14px}
+section{margin-top:clamp(44px,9vw,88px)}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chip{display:inline-block;padding:.55em 1.15em;border:1px solid var(--bd);border-radius:999px;background:var(--card);color:var(--tx);text-decoration:none;font-size:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{display:block;padding:26px;border:1px solid var(--bd);border-radius:22px;background:var(--card);color:inherit;text-decoration:none}
+.card h3{margin:0 0 6px;font-size:1.25rem;letter-spacing:-.01em}.card p{color:var(--sub);font-size:.97rem}
+.btns{display:flex;flex-wrap:wrap;gap:14px}.btns .chip{padding:.75em 1.6em;font-weight:600}
+.btns .pri{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+img{max-width:100%;height:auto;display:block;margin:0 auto}
+footer{margin-top:64px;color:var(--sub);font-size:.85rem}
+a:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+
+/* glow border component */
+.glow{--glow-line-color:var(--gl);--glow-line-thickness:2px;--glow-line-length:20;--glow-blur-color:var(--ac);--glow-blur-size:10px;--animation-speed:1200ms;--container-offset:100px;position:relative}
+.glow-container{pointer-events:none;position:absolute;inset:calc(var(--container-offset)/-2);width:calc(100% + var(--container-offset));height:calc(100% + var(--container-offset));opacity:0}
+.glow-blur,.glow-line{width:calc(100% - var(--container-offset));height:calc(100% - var(--container-offset));x:calc(var(--container-offset)/2);y:calc(var(--container-offset)/2);fill:transparent;stroke:#000;stroke-width:5px;stroke-dasharray:var(--glow-line-length) calc(50 - var(--glow-line-length))}
+.glow-line{stroke:var(--glow-line-color);stroke-width:var(--glow-line-thickness)}
+.glow-blur{filter:blur(var(--glow-blur-size));stroke:var(--glow-blur-color);stroke-width:var(--glow-blur-size)}
+.glow:is(:hover,:focus-visible) .glow-blur,.glow:is(:hover,:focus-visible) .glow-line{stroke-dashoffset:-80px;transition:stroke-dashoffset var(--animation-speed) ease-in,stroke-dasharray var(--animation-speed) ease-in}
+.glow:is(:hover,:focus-visible) .glow-container{animation:glow-visibility var(--animation-speed) ease-in}
+@keyframes glow-visibility{0%,100%{opacity:0}25%,75%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.glow-container{display:none}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 class="rv">Sushant Sutar</h1>
+    <p class="sub rv" style="--d:.15s">Python · Machine Learning · Data Mining</p>
+  </header>
+
+  <section>
+    <h2 class="rv">Skills</h2>
+    <div class="chips" id="skills"></div>
+  </section>
+
+  <section>
+    <h2 class="rv">Projects</h2>
+    <div class="grid">
+      <a class="card glow rv" href="https://github.com/i-Sush/Data-Mining-Case-Studies"><h3>Data-Mining-Case-Studies</h3><p>Four case studies on real datasets, each pairing a preprocessing technique with a model.</p></a>
+      <a class="card glow rv" style="--d:.1s" href="https://github.com/i-Sush/AI-ML"><h3>AI-ML</h3><p>Learning repository for AI/ML algorithms, projects and practical implementations.</p></a>
+      <a class="card glow rv" style="--d:.2s" href="https://github.com/i-Sush/Docker"><h3>Docker</h3><p>Notes, experiments and sample containers, from a first container to fundamentals.</p></a>
+      <a class="card glow rv" style="--d:.3s" href="https://github.com/i-Sush/Git_Github"><h3>Git_Github</h3><p>Git and GitHub basics. Early stage.</p></a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="rv">Activity</h2>
+    <div class="rv"><picture><source media="(prefers-color-scheme: light)" srcset="calendar-light.svg"><img src="calendar-dark.svg" alt="Contribution calendar for i-Sush" width="749"></picture></div>
+    <div class="rv" style="margin-top:18px"><picture><source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=i-Sush&background=F5F5F7&ring=007AFF&fire=FF9500&currStreakLabel=007AFF&sideLabels=6E6E73&currStreakNum=1D1D1F&sideNums=1D1D1F&dates=86868B&stroke=E5E5EA&border=E5E5EA&border_radius=22"><img src="https://streak-stats.demolab.com?user=i-Sush&background=1C1C1E&ring=0A84FF&fire=FF9F0A&currStreakLabel=0A84FF&sideLabels=A1A1A6&currStreakNum=F5F5F7&sideNums=F5F5F7&dates=8E8E93&stroke=2C2C2E&border=2C2C2E&border_radius=22" alt="GitHub streak card for i-Sush" width="495"></picture></div>
+  </section>
+
+  <section>
+    <h2 class="rv">Connect</h2>
+    <div class="btns rv">
+      <a class="chip pri glow" href="https://github.com/i-Sush">GitHub</a>
+      <a class="chip glow" href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID">LinkedIn</a>
+      <a class="chip glow" href="mailto:YOUR_EMAIL@example.com">Email</a>
+    </div>
+  </section>
+  <footer>© Sushant Sutar · <a style="color:inherit" href="https://github.com/i-Sush">github.com/i-Sush</a></footer>
+</main>
+
+<script>
+/* skills -> chips with glow */
+const skills=["Python","Machine Learning","AI","Docker","SQL","C++","Pandas","NumPy","scikit-learn","Git"];
+const box=document.getElementById("skills");
+skills.forEach((s,i)=>{const a=document.createElement("span");a.className="chip glow rv";a.tabIndex=0;a.style.setProperty("--d",(i*.06)+"s");a.textContent=s;box.appendChild(a)});
+
+/* glow: inject SVG, then copy border radius onto the rects */
+document.querySelectorAll(".glow").forEach(el=>{
+  el.insertAdjacentHTML("beforeend",'<svg class="glow-container" aria-hidden="true"><rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect><rect pathLength="100" stroke-linecap="round" class="glow-line"></rect></svg>');
+  const rx=getComputedStyle(el).borderRadius;
+  el.querySelectorAll("rect").forEach(r=>r.setAttribute("rx",rx));
+});
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
